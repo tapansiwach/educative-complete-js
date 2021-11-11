@@ -7,40 +7,21 @@ readline.question("Enter month number: ", monthNumber => {
   monthNumber = Number(monthNumber);
   switch (monthNumber) {
     case 1:
-      console.log("Number of days: 31");
-      break;
-    case 2:
-      console.log("Number of days: 28");
-      break;
     case 3:
-      console.log("Number of days: 31");
+    case 5:
+    case 7:
+    case 8:
+    case 10:
+    case 12:
+      console.log("This month has 31 days");
       break;
     case 4:
-      console.log("Number of days: 30");
-      break;
-    case 5:
-      console.log("Number of days: 31");
-      break;
     case 6:
-      console.log("Number of days: 30");
-      break;
-    case 7:
-      console.log("Number of days: 31");
-      break;
-    case 8:
-      console.log("Number of days: 31");
-      break;
     case 9:
-      console.log("Number of days: 30");
-      break;
-    case 10:
-      console.log("Number of days: 31");
-      break;
     case 11:
-      console.log("Number of days: 30");
-      break;
-    case 12:
-      console.log("Number of days: 31");
+      console.log("This month has 30 days");
+    case 2:
+      console.log("This month has 28 days");
       break;
     default:
       console.log("unknown month number");
