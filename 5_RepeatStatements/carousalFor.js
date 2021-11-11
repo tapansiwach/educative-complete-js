@@ -5,11 +5,9 @@ const readline = require('readline').createInterface({
 
 readline.question("How many turns? ", turns => {
   turns = Number(turns);
-  let run = 1;
   if (typeof turns === "number") {
-    while (run <= turns) {
-      console.log(`Turn number: ${run}`);
-      run++;
+    for (let counter = 1; counter <= turns; counter++) {
+      console.log(`Turn number: ${counter}`)
     }
   }
   readline.close();
