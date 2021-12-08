@@ -7,10 +7,14 @@
 // For Correct Cases, return the "nodeName" property of that node
 
 function showChild(node, index) {
-  if (node.nodeType !== document.ELEMENT_NODE) return "Wrong Node Type";
+  if (node.nodeType !== document.ELEMENT_NODE) {
+    console.error("Wrong Node Type");
+  }
 
-  if (index >= node.children.length
-    || index < 0) return "Wrong Index"
+  if (index >= node.children?.length
+    || index < 0) {
+    console.error("Wrong Index")
+  }
 
   return node.children[index].nodeName;
 };
